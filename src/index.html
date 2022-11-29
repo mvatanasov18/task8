@@ -47,4 +47,11 @@
       </div>
     </div>
   </body>
+  <script>
+    var hui = document.getElementsByClassName('product');
+    Array.from(hui).forEach(pishka=>{
+      const p = document.getElementsByClassName('price');
+      pishka.setAttribute("data-price",p[0].textContent)
+    })
+  </script>
 </html>
